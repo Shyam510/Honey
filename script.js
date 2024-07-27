@@ -14,7 +14,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
     })
         .then(response => response.json())
         .then(data => {
-            const shortUrl = `https://Shyam510.github.io/honey/?code=${data.body.shortURL}`;
+            const shortUrl = `https://Shyam510.github.io/Honey/?code=${data.body.shortURL}`;
 
             document.getElementById('shortUrlDisplay').innerHTML = `<a href="${shortUrl}" target="_blank">${shortUrl}</a>`;
             resultSection.style.display = 'block';
